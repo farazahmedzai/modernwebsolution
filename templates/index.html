@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Web Solutions</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-code me-2"></i>ModernWeb
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Modern Web Solutions for Your Business
+                    </h1>
+                    <p class="lead mb-4">
+                        We create stunning, responsive websites that drive results. 
+                        From concept to launch, we deliver digital experiences that matter.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#services" class="btn btn-primary btn-lg me-3">Our Services</a>
+                        <a href="#contact" class="btn btn-outline-secondary btn-lg">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <i class="fas fa-laptop-code hero-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title mb-4">About Us</h2>
+                    <p class="mb-4">
+                        We are a team of passionate web developers and designers dedicated to creating 
+                        exceptional digital experiences. With years of experience in the industry, 
+                        we understand what it takes to build websites that not only look great but 
+                        also perform exceptionally.
+                    </p>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Modern Technologies</span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>SEO Optimized</span>
+                            </div>
+                            <div class="feature-item mb-3">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                <span>Fast Loading</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-stats">
+                        <div class="row">
+                            <div class="col-6 text-center mb-4">
+                                <div class="stat-card">
+                                    <h3 class="stat-number">100+</h3>
+                                    <p class="stat-label">Projects Completed</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center mb-4">
+                                <div class="stat-card">
+                                    <h3 class="stat-number">50+</h3>
+                                    <p class="stat-label">Happy Clients</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="stat-card">
+                                    <h3 class="stat-number">5+</h3>
+                                    <p class="stat-label">Years Experience</p>
+                                </div>
+                            </div>
+                            <div class="col-6 text-center">
+                                <div class="stat-card">
+                                    <h3 class="stat-number">24/7</h3>
+                                    <p class="stat-label">Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We offer comprehensive web development services</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h4>Web Design</h4>
+                        <p>
+                            Beautiful, user-friendly designs that capture your brand's essence 
+                            and engage your audience effectively.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Web Development</h4>
+                        <p>
+                            Custom web applications built with modern technologies, 
+                            ensuring scalability and performance.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h4>Responsive Design</h4>
+                        <p>
+                            Mobile-first approach ensuring your website looks perfect 
+                            on all devices and screen sizes.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h4>SEO Optimization</h4>
+                        <p>
+                            Improve your search engine rankings with our comprehensive 
+                            SEO strategies and optimization techniques.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h4>Performance</h4>
+                        <p>
+                            Lightning-fast websites optimized for speed and performance 
+                            to provide the best user experience.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-card h-100">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>Support</h4>
+                        <p>
+                            Ongoing maintenance and support to keep your website 
+                            running smoothly and up-to-date.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Portfolio</h2>
+                <p class="section-subtitle">Some of our recent work</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-store portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>E-Commerce Platform</h5>
+                                <p>Modern online store with payment integration</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-building portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>Corporate Website</h5>
+                                <p>Professional business website with CMS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-utensils portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>Restaurant Website</h5>
+                                <p>Beautiful food presentation with online ordering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-camera portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>Photography Portfolio</h5>
+                                <p>Stunning gallery with lightbox functionality</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-chart-line portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>Analytics Dashboard</h5>
+                                <p>Real-time data visualization and reporting</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="portfolio-item">
+                        <div class="portfolio-image">
+                            <i class="fas fa-graduation-cap portfolio-icon"></i>
+                            <div class="portfolio-overlay">
+                                <h5>Educational Platform</h5>
+                                <p>Online learning management system</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-dark">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to start your project? Let's talk!</p>
+            </div>
+            
+            <!-- Flash Messages -->
+            {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    <div class="row justify-content-center mb-4">
+                        <div class="col-lg-8">
+                            {% for category, message in messages %}
+                                <div class="alert alert-{{ 'success' if category == 'success' else 'danger' }} alert-dismissible fade show" role="alert">
+                                    {{ message }}
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                {% endif %}
+            {% endwith %}
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <form id="contactForm" method="POST" action="{{ url_for('contact') }}">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                                <div class="invalid-feedback">
+                                    Please enter your name.
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                                <div class="invalid-feedback">
+                                    Please enter a valid email address.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                            <div class="invalid-feedback">
+                                Please enter your message.
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-paper-plane me-2"></i>Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <h5>Address</h5>
+                        <p>123 Web Street<br>Digital City, DC 12345</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <h5>Phone</h5>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <h5>Email</h5>
+                        <p>hello@modernweb.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="footer-brand">
+                        <i class="fas fa-code me-2"></i>
+                        <span>ModernWeb</span>
+                    </div>
+                    <p class="mb-0">Creating digital experiences that matter.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <p class="mb-0 mt-2">&copy; 2024 ModernWeb. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
